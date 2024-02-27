@@ -52,7 +52,7 @@ main >h2 {
 main section#proyectos article.proyecto {
     width: 100%;
     color: var(--white);
-    background-color: var(--card-background-color);
+    background-color: var(--azul-gris-oscuro);
     padding: 10px;
     border-radius: 5px;
 }
