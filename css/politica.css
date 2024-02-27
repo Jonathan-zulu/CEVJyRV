@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+main h1, main h3 {
+    color: var(--white);
+}
+
+main h3{
+    margin: 1rem;
+    border-top: 1px solid var(--gris);
+    padding-top: 0.5rem;
+}
+
+main p{
+    margin: 20px;
+    background-color: var(--gris-azulado-claro);
+    padding: 1rem;
+    border-radius: 5px;
+    height: 40vh;
+    overflow-y: scroll;
+}

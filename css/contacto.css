@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+main{   
+    margin-bottom: 20px;
+}
+
+main h2 {
+    color: var(--rojo-salmon);
+}
+
+main form {
+    margin-top: 20px;
+    background-color: var(--gris-azulado-claro);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+main form fieldset {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main form legend {
+    padding: 0 10px;
+    color: var(--azul-vivo);
+    font-weight: bold;
+}
+
+main form label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+main form button[type="submit"] {
+    background-color: var(--azul-vivo);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+main form button[type="submit"]:hover {
+    background-color: var(--azul-medio-oscuro);
+}
+
+main section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--gris-azulado-claro);
+    border-radius: 5px;
+}
+
+main section h2 {
+    margin-top: 0;
+}
+
+main section details {
+    margin-bottom: 10px;
+}
+
+main section summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main section details[open] summary {
+    color: var(--azul-vivo);
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    main section:first-child {
+        grid-column: 1 / -1;
+    }
+
+    main form {
+        grid-column: 1 / -1;
+    }
+}

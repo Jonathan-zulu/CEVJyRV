@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  --font-title: 2rem;
+  --font-subtitle: 1.5rem;
+  --dark-gray: #333333;
+  --white: #FFFFFF;
+  --gray-blue: #556270;
+  --turquoise: #4ECDC4;
+  --lime-green: #C7F464;
+  --soft-red: #FF6B6B;
+  --dark-red: #C44D58;
+  --card-background-color: #141e26;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+header{
+  min-height: 50px;
+  background-color: #000;
+  position: sticky;
+
+}
+
+header div.container aside {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+header div.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 30px 10px;
+}
+
+header div.container i{ color : white; }
+
+header div#menu {
+
+  background-color: #333;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-title);
+}
+
+header div#menu ul { list-style: none; }
+
+header div#menu ul li { margin-bottom: 60px; }
+
+header div#menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+header div#swiper-principal {
+  width: 100%;
+  height: auto;
+
+}
+
+header div#swiper-principal img {
+  width: 100%;
+  height: auto;
+}
+
+div#swiper-comun {
+  width: 100%;
+  height: auto;
+
+}
+
+ div#swiper-comun img {
+  width: 200px;
+  height: auto;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+}
+
+main article#conocenos {
+  border: 1px solid white;
+
+  min-height: 20vh;
+  color: white;
+  border-radius: 5px;
+  background-image: url('./../img/background.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: left;
+  box-shadow: 5px 5px 15px rgba(0,0,0,);
+  margin-bottom: 20px;
+}
+
+
+
+main article#conocenos h2{
+  border-radius: 5px;
+  padding: 20px 0 0 1%;
+  width: 50%;
+  height: 20vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  font-size: var(--font-title);
+}
+
+main section#proyectos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 100%;
+
+}
+
+main section#proyectos>h2{
+  text-align: center;
+  color: white;
+  font-size: var(--font-title);
+  margin: 0.5rem 0;
+}
+
+
+main section#proyectos hr{
+  width: 80%;
+  margin: 0 auto;
+}
+
+main section#proyectos article.proyecto { 
+  width: 100%;
+  color: white; 
+  background-color: var(--card-background-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main section#proyectos article.proyecto h2 { 
+  font-size: var(--font-subtitle);
+  color: var(--soft-red);
+}
+
+main section#proyectos article.proyecto div.slider{
+  aspect-ratio: 17.5 / 10;
+  width: 100%;
+  position: relative;
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+main section#proyectos article.proyecto div.slider img {
+  width: 100%;
+  left: 0;
+  position: sticky;
+  object-fit: cover;
+  border-radius: 5px;
+  scroll-snap-align: center;
+}
+
+main section#proyectos a.vermas {
+  display: inline-block;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+main section#proyectos a.vermas:hover, .vermas:focus {
+  background-color: var(--card-background-color);
+  color: #ddd;
+}
+
+/* Footer Styles */
+
+footer {
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 0.8rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "enlaces siguenos" 
+                       "contacto contacto"
+                       "derechos derechos";
+  gap: 0.5rem;
+  padding: 0 40px;
+}
+
+footer ul { list-style: none }
+
+footer h4,footer ul li {margin-bottom: 0.75em;}
+
+footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+footer section#enlaces {
+  grid-area: enlaces;
+
+}
+
+footer section#siguenos {
+  grid-area: siguenos;
+
+  
+}
+
+footer section#contacto {
+  grid-area: contacto;
+
+  
+}
+
+footer section#derechos {
+  border-top: 1px solid grey;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  grid-area: derechos;
+  
+}
